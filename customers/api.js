@@ -17,6 +17,8 @@ router.use(bodyParser.urlencoded({extended: false}));
 router.post('/add', (req, res, next) => {
   const data = req.body;
 
+  /* Exactly here is where a lot of input checking should be going on */
+
   tods.insert(data, (err, entity) => {
     if (err) {
       next(err);
