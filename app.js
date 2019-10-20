@@ -1,14 +1,7 @@
 'use strict';
 
 const express = require('express');
-const bodyParser = require('body-parser');
-
-
 const app = express();
-
-// Use a datastore
-const tods = require('./customers/to-ds');
-const {Datastore} = require('@google-cloud/datastore');
 
 // Use the api, mounted on /api/customers
 app.use('/customers', require('./customers/api'));
