@@ -1,0 +1,18 @@
+{
+  "name": "impress",
+  "version": "1.0.0",
+  "description": "Datastore API and demo app for hiring process",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Jakob Krochmal 🐍",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/datastore": "^4.0.0",
+    "express": "^4.16.4",
+    "pug": "^2.0.3",
+    "glyphicons": "^0.2.0",
+    "body-parser": "1.19.0"
+  }
+}

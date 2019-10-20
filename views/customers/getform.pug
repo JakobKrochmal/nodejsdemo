@@ -1,0 +1,12 @@
+extends ../index.pug
+
+block content
+  h3 #{action} customer
+  form(method="POST")
+
+    .form-group
+      label(for="id") Customer Id
+      input.form-control(type="text", name="id", id="customerId", value=customer.id)
+    .form-group
+    button.btn.btn-success(type="submit") Show
+
